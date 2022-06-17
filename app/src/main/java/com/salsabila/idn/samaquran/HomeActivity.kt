@@ -1,4 +1,4 @@
-package com.salsabila.idn.quranapp
+package com.salsabila.idn.samaquran
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

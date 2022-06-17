@@ -1,4 +1,4 @@
-package com.salsabila.idn.quranapp
+package com.salsabila.idn.samaquran
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

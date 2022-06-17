@@ -1,4 +1,4 @@
-package com.salsabila.idn.quranapp
+package com.salsabila.idn.samaquran
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()) //buat ngambil waktu
             .postDelayed({
-                startActivity(Intent(this, LoginActivity::class.java))
+                startActivity(Intent(this,LoginActivity::class.java))
                 finish() //buat matiin activity
             }, SPLASH_TIME_OUT)
     }
