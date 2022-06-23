@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SplashActivity">
+    tools:context=".ui.splash.SplashActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="80dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/shape_rectangle_transparant"
+        android:background="@drawable/shape_rectangle_birumuda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,10 +63,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_get_started"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_rectangle_onboarding"
+        android:background="@drawable/shape_rectangle_hijau"
         android:fontFamily="@font/poppins_semibold"
         android:paddingHorizontal="26dp"
         android:paddingVertical="11dp"

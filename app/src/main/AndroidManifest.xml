@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.salsabila.idn.samaquran">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_logo"
@@ -10,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuranApp">
         <activity
-            android:name="com.salsabila.idn.samaquran.SplashActivity"
+            android:name=".ui.tafsir.TafsirActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".ui.surat.SuratActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -19,28 +33,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OnboardingActivity"
-            android:exported="false"/>
-        <activity android:name=".SignInActivity"
-            android:exported="false"/>
-        <activity android:name=".SignUpActivity"
-            android:exported="false"/>
         <activity
-            android:name="com.salsabila.idn.samaquran.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.salsabila.idn.samaquran.DetailActivity"
-            android:exported="false"/>
-        <activity
-            android:name="com.salsabila.idn.samaquran.MenuActivity"
-            android:exported="false"/>
-        <activity
-            android:name="com.salsabila.idn.samaquran.ProfileActivity"
-            android:exported="false"/>
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/SplashTheme"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>
